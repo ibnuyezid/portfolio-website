@@ -32,7 +32,7 @@ export default function Project() {
             </div>
           </div>
           <div class="projectDetail dta">
-            <h1 class="projectTitle">ab-Connect</h1>
+            <h1 class="projectTitle">Lab-Connect</h1>
             <p class="projectDesc">
               A labratory sytem that have a full modern functional Labratory
               order Dashboard to manage patients records related to labratory.
