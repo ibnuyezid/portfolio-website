@@ -17,9 +17,10 @@
 
   border-radius: 1rem;
   position: relative;
-  bottom: 10rem;
+  bottom: 2rem;
   height: calc(100vh - 45px);
   max-height: max-content;
+  min-height:max-content;
 }
 
 .aside__image {
