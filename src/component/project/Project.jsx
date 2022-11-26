@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import phone from "../../img/phone.png";
 import phonebig from "../../img/phonebig.png";
 import phonsma from "../../img/phone-png-17040.png";
-import app from "../../img/app-release.apk";
+// import app from "../../img/app-release.apk";
 import laptop from "../../img/laptop.png";
 import dashbord from "../../img/Dashboard.png";
 import rateit from "../../img/rateit.png";
@@ -53,8 +53,8 @@ export default function Project() {
             >
               {" "}
               <a
-                href={app}
-                download="lab-connect"
+               
+               
                 style={{ textDecoration: "none" }}
               >
                 Download app
