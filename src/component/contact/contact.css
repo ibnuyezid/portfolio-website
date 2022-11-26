@@ -18,7 +18,7 @@
   border-radius: 1rem;
   position: relative;
   bottom: 10rem;
-  height: calc(100vh-45px);
+  height: calc(100vh - 45px);
   max-height: max-content;
 }
 
