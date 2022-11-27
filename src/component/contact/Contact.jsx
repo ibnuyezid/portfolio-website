@@ -36,12 +36,12 @@ export default function Contact() {
           </ul>
           <ul className="contact__socials">
             <li>
-              <a href="https://facebook.com" target="_blank">
+              <a href="https://facebook.com" target="_blank" rel="noreferrer">
                 <i className="uil uil-facebook-f"></i>
               </a>
             </li>
             <li>
-              <a href="https://instagram.com">
+              <a href="https://instagram.com" rel="noreferrer">
                 <i className="uil uil-instagram-alt"></i>
               </a>
             </li>
@@ -51,7 +51,7 @@ export default function Contact() {
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com">
+              <a href="https://linkedin.com" rel="noreferrer">
                 <i className="uil uil-linkedin-alt"></i>
               </a>
             </li>

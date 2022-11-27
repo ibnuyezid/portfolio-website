@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: 45% 70%;
   gap: 4rem;
-  height: 40rem;
-  margin: 7rem auto;
+  height: auto;
+  color: rgb(255, 249, 249);
   border-radius: 1rem;
 }
 .uil {
@@ -14,13 +14,12 @@
 .contact__aside {
   background: var(--color-primary);
   padding: 3rem;
-
+  max-width: max-content;
   border-radius: 1rem;
   position: relative;
   bottom: 2rem;
-  height: calc(100vh - 45px);
+
   max-height: max-content;
-  min-height:max-content;
 }
 
 .aside__image {
@@ -89,6 +88,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  margin-top: 4rem;
   margin-right: 4rem;
 }
 .form__name {

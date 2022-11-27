@@ -1,9 +1,6 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../context";
 import "./product.css";
 
 const Product = ({ img, link, title, desc, top }) => {
-  const theme = useContext(ThemeContext);
   return (
     <>
       <div className={`p ${top}`}>
@@ -13,7 +10,12 @@ const Product = ({ img, link, title, desc, top }) => {
           <h2> {title}</h2>
 
           <p className="detaildesc">{desc}</p>
-          <a href={link} className="view online" target="_blank">
+          <a
+            href={link}
+            className="view online"
+            target="_blank"
+            rel="noreferrer"
+          >
             View Online
           </a>
         </div>

@@ -1,20 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import React, { useContext, useEffect } from "react";
+import { Link } from "react-scroll";
 import "./navbar.css";
 import sun from "../../img/sun.png";
 import moon from "../../img/moon.png";
 import { ThemeContext } from "../../context";
 export default function Navbar() {
-  const [windows, setWindows] = useState(-1);
-
   const theme = useContext(ThemeContext);
   const handleClick = () => {
     theme.dispatch({ type: "TOGGLE" });
@@ -22,20 +12,15 @@ export default function Navbar() {
   useEffect(() => {
     const eventlistner = () => {
       const projectstitle = document.querySelector(".projectsTitle");
-      const laptop = document.querySelector(".laptop");
 
       const right = document.querySelector(".i-right");
       const left = document.querySelector(".i-left");
-      const p1 = document.querySelector(".pl");
 
       const phones = document.querySelectorAll(".phone");
       right.style.transform = `translate(${0.4 * window.scrollY}px,${
         0.5 * -window.scrollY
       }px)`;
 
-      // p1.style.transform = `translate(${500 - window.scrollY}px,${
-      //   0.5 * -window.scrollY
-      // }px)`;
       left.style.transform = `translate(${0.4 * -window.scrollY}px,${
         0.5 * -window.scrollY
       }px)`;
@@ -56,18 +41,26 @@ export default function Navbar() {
 
       <div className="socialicon">
         <span className="socilcont">
-          <a href="https://www.linkedin.com/in/mohammed-yezid/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/mohammed-yezid/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </span>
         <span className="socilcont">
-          <a href="https://www.instagram.com/" target="_blank">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
             {" "}
             <i className="fa-brands fa-instagram"></i>
           </a>{" "}
         </span>
         <span className="socilcont">
-          <a href="https://github.com/ibnuyezid" target="_blank">
+          <a
+            href="https://github.com/ibnuyezid"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i
               className="fa-brands fa-github"
               style={{ color: !theme.state.darkMode && "black" }}

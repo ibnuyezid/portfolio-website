@@ -34,7 +34,8 @@
   display: flex;
   align-items: center;
   gap: 100px;
-  height: 100vh;
+  height: auto;
+
   overflow: hidden;
 }
 
@@ -169,8 +170,9 @@
   flex-direction: column;
   gap: 50px;
   align-items: center;
-  height: max-content;
-  flex: 1;
+  min-height: max-content;
+  max-height: 150vh;
+  flex: 2;
 }
 
 .projectTitle {
@@ -179,7 +181,7 @@
 
 .projectDesc {
   font-size: 1.3rem;
-
+  height: 100%;
   text-align: justify;
   line-height: 40px;
 }
@@ -231,7 +233,7 @@
 }
 @media screen and (max-width: 1024px) {
   .projects {
-    padding: 0 30px;
+    padding: 13px 30px;
     text-align: center;
   }
   .skew {
@@ -292,6 +294,9 @@
     margin-left: 10px;
     margin-top: 40px;
   }
+  .projectTitle {
+    font-size: 10vw;
+  }
 }
 @media screen and (max-width: 1200px) {
   .phone {
@@ -312,7 +317,7 @@
     scale: 1;
   }
   .laptop {
-    scale: 0.8;
+    scale: 0.7;
 
     margin-left: 10px;
   }
@@ -346,7 +351,7 @@
     flex: 2;
   }
   .projectDesc {
-    line-height: 30px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 1143px) {
@@ -356,7 +361,7 @@
 }
 @media screen and (max-width: 1311px) {
   .projectDesc.dta {
-    line-height: 10px;
+    line-height: 20px;
   }
   .info {
     display: none;

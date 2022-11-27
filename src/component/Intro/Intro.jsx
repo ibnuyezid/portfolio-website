@@ -32,7 +32,6 @@ export default function Intro() {
 
           <button
             className="button-73"
-            role="button"
             style={{
               width: "max-content",
 

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import phone from "../../img/phone.png";
 import phonebig from "../../img/phonebig.png";
 import phonsma from "../../img/phone-png-17040.png";
-// import app from "../../img/app-release.apk";
+import app from "../../img/app-release.apk";
 import laptop from "../../img/laptop.png";
 import dashbord from "../../img/Dashboard.png";
 import rateit from "../../img/rateit.png";
@@ -39,27 +39,31 @@ export default function Project() {
               <span className="info">
                 it's ongoing project that briges the gap between
                 doctors,patients and lab-technicians by facilating relible
-                communication and
+                communication and &nbsp;
               </span>
               doctors are able to choose available labs in the city and order
               lab tests for patients. The system also allows Doctors to know
               real time status of sample (ETA).Handovers are also registered in
               database for real time location.You can download the app to know
               more about the feature ...
-            </p>
-            <button
-              class="projectButton"
-              style={{ backgroundColor: !theme.state.darkMode && "#323232" }}
+            </p>{" "}
+            <a
+              href={app}
+              style={{ textDecoration: "none" }}
+              rel="noreferrer"
+              download="Lab-connect"
             >
               {" "}
-              <a
-               
-               
-                style={{ textDecoration: "none" }}
+              <button
+                class="projectButton"
+                style={{
+                  color: "inherit",
+                  backgroundColor: !theme.state.darkMode && "#323232",
+                }}
               >
-                Download app
-              </a>
-            </button>
+                Download app{" "}
+              </button>
+            </a>
           </div>
         </div>
         <div class="project">
@@ -79,19 +83,25 @@ export default function Project() {
               client service rating. Note that this is a platform to not rate a
               burger-place but a burger at a burger place. See it online
             </p>
-            <button
-              class="projectButton"
-              style={{ backgroundColor: !theme.state.darkMode && "#323232" }}
+
+            <a
+              rel="noreferrer"
+              href="https://rateeat.app"
+              target="_blank"
+              style={{ textDecoration: "none" }}
             >
-              <a
-                href="https://rateeat.app"
-                target="_blank"
-                style={{ textDecoration: "none" }}
+              {" "}
+              <button
+                class="projectButton"
+                style={{
+                  color: "inherit",
+                  backgroundColor: !theme.state.darkMode && "#323232",
+                }}
               >
                 {" "}
                 View Demo
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
         <div class="project">
@@ -110,20 +120,26 @@ export default function Project() {
               Nicely-organized and made easy-to-use pages. Cross-referenced to
               related information.see the demo...
             </p>
-            <button
-              className="projectButton"
-              style={{ backgroundColor: !theme.state.darkMode && "#323232" }}
+
+            <a
+              rel="noreferrer"
+              href="https://searchwiki-engine.netlify.app/"
+              target="_blank"
+              style={{
+                textDecoration: "none",
+              }}
             >
-              <a
-                href="https://searchwiki-engine.netlify.app/"
-                target="_blank"
+              {" "}
+              <button
+                className="projectButton"
                 style={{
-                  textDecoration: "none",
+                  color: "inherit",
+                  backgroundColor: !theme.state.darkMode && "#323232",
                 }}
               >
                 View Demo
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -132,12 +148,12 @@ export default function Project() {
 
         <div class="githubSm">
           <a
+            rel="noreferrer"
             href="https://github.com/ibnuyezid"
             target="_blank"
             style={{
               color: !theme.state.darkMode && "black",
-              // boxShadow:
-              //   !theme.state.darkMode && "0px 5px 10px 0px rgba(0, 0, 0, 0.5)",
+
               background: !theme.state.darkMode && "#fff",
               border: !theme.state.darkMode && "none",
             }}

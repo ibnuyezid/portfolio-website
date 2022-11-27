@@ -10,7 +10,10 @@
   text-align: center;
   justify-content: center;
 }
-
+.pl-list:first-child > .desc h2 {
+  transform: translateY(-160px);
+  background-color: aliceblue;
+}
 .pl-texts {
   width: 65%;
 }
@@ -28,9 +31,10 @@
 .pl-list {
   display: flex;
   width: 100vw;
+  height: max-content;
   gap: 40px;
-
-  justify-content: space-evenly;
+  padding: 10px;
+  justify-content: space-around;
   flex-wrap: nowrap;
 }
 @media screen and (max-width: 1024px) {

@@ -5,7 +5,7 @@ export const products = [
   {
     id: 1,
     img: img1,
-    top: "no",
+    top: "first",
     link: "https://drive.google.com/file/d/1-frfRp1KsUjmdPE89vuxf65pByVBV7Ma/view?usp=share_link",
     title: "Modern Software dev't Training",
     desc: "Attended training given by International Trade Center and gained a concrete Knowledge on Software engineering methods and practices, and their appropriate application...",
